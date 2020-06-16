@@ -57,7 +57,8 @@ def runModel(climate,param_values,num_model,round_num,output):
     
     #run the models
     #'/usr/bin/openstudio': path of the software
-    os.system("'/usr/bin/openstudio' run -w './"+str(num_model)+"/compact.osw'")
+    #os.system("'/usr/bin/openstudio' run -w './"+str(num_model)+"/compact.osw'")
+    os.system("openstudio run -w './"+str(num_model)+"/compact.osw'")
 
     #get the results
     #output data
@@ -67,8 +68,8 @@ def runModel(climate,param_values,num_model,round_num,output):
 
     #source eui and site eui
     total_site, total_source, total_area = rene.readEnergyUse(num_model)
-    output_data.append(total_source/total_area*1000.0/11.35653)
     output_data.append(total_site/total_area*1000.0/11.35653)
+    output_data.append(total_source/total_area*1000.0/11.35653)
     #Unit: MJ/m2
     #[record_model,source_EUI,site_EUI]
     
