@@ -35,13 +35,6 @@
 			}
 		},
 		{
-			"measure_dir_name": "SetWaterHeaterEfficiency",
-			"arguments": {
-				"heater_fuel_type_widget": "NaturalGas",
-				"heater_thermal_efficiency": 0.8
-			}
-		},
-		{
 			"measure_dir_name": "ChangeElectricEquipmentLoadsByPercentage",
 			"arguments": {
 				"elecequip_power_change_percent": 30.0

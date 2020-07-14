@@ -4,7 +4,6 @@ ChangeInsulationRValueForRoofs
 ChangeUValueandSHGCOfWindows
 ReplaceLightsInSpaceTypeWithLPD
 SetHeatingandCoolingSizingFactors
-SetWaterHeaterEfficiency
 AddOverhangsByProjectionFactor
 ChangeOutdoorAir
 ResizeExistingWindowsToMatchAGivenWWR
